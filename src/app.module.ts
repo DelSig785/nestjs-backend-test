@@ -17,8 +17,8 @@ import { HouseEntity } from './house/entities/house.entity';
     host: 'localhost',
     port: 5432,
     username: 'postgres',
-    password: 'root',
-    database: 'db',
+    password: 'root', //your password
+    database: 'root', //your db
     entities: [UserEntity, PostEntity, CommentEntity, HouseEntity],
     synchronize: false }), UserModule, PostModule, CommentModule, HouseModule],
     controllers: [AppController],

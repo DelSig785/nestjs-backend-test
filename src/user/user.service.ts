@@ -25,7 +25,7 @@ export class UserService {
   }
 
   async findAll() {
-    const users = await this.usersRepo.find({relations: ['houses']}); //{ relations: ['houses']}
+    const users = await this.usersRepo.find({relations: ['house']}); //{ relations: ['houses']}
     // const houses = await this.housesRepo.find({})
     return users;
   }
